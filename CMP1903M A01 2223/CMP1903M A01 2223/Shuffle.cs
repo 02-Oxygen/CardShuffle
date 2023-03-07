@@ -10,8 +10,14 @@ namespace CMP1903M_A01_2223
 {
     internal static class Shuffle
     {
+
+        //FisherYates shuffle
+        //shuffle array in place
+        //take random element
+        //and poalces into array
         public static List<Card> FisherYatesShuffle(List<Card> Deck)
         {
+
             Card[] array = new Card[Deck.Count];
             int[] ind = new int[Deck.Count];
             int index;
@@ -36,6 +42,10 @@ namespace CMP1903M_A01_2223
             return array.ToList();
         }
 
+        //Riffle Shuffle
+        //Picks two random cards
+        //THen swaps them
+        //Does for the replacement amount
         public static List<Card> RiffleShuffle(List<Card> Deck)
         {
             Random random = new Random();

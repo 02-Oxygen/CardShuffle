@@ -15,10 +15,16 @@ namespace CMP1903M_A01_2223
         public int Value { get; set; }
         public int Suit { get; set; }
 
+        //Initialises card
         public Card(int Value, int Suit)
         {
             this.Value = Value;
             this.Suit = Suit;
+        }
+
+        public void ReadCard()
+        {
+            Console.WriteLine($"Value: {Value} Suit: {Suit}");
         }
     }
 }
